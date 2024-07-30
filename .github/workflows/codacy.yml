@@ -50,4 +50,4 @@ jobs:
             --volume "$CODACY_CODE":"$CODACY_CODE" \
             --volume /tmp:/tmp \
             codacy/codacy-analysis-cli \
-              analyze --skip-uncommitted-files-check --tool spotbugs --upload --project-token ${{ secrets.CODACY_PROJECT_TOKEN }} --max-allowed-issues 99999 --commit-uuid $GITHUB_SHA --skip-uncommitted-files-check
+              analyze --skip-uncommitted-files-check --tool spotbugs --upload --project-token ${{ secrets.CODACY_PROJECT_TOKEN }} --max-allowed-issues 99999 --commit-uuid $GITHUB_SHA --verbose
